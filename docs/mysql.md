@@ -22,8 +22,8 @@ Change the database image to use MySQL instead of PostgreSQL in `compose.yaml`:
 -     POSTGRES_USER: ${POSTGRES_USER:-app}
 +     MYSQL_USER: ${MYSQL_USER:-app}
     volumes:
--     - database_data:/var/lib/postgresql/data:rw
-+     - database_data:/var/lib/mysql:rw
+-     - landing_database_data:/var/lib/postgresql/data:rw
++     - landing_database_data:/var/lib/mysql:rw
       # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
 -     # - ./docker/db/data:/var/lib/postgresql/data:rw
 +     # - ./docker/db/data:/var/lib/mysql:rw

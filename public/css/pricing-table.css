@@ -529,7 +529,7 @@ xkeyframes
 
 .pricing-list {
     margin: 20px 0;
-    list-style-type: circle;
+    list-style-type: disc;
 }
 
 .pricing-list li {
