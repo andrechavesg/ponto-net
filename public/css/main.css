@@ -1161,7 +1161,11 @@ ul.nav > li > a:hover, ul.nav > li > a:focus, ul.nav > li > a.active {
     opacity: .8;
     color: #05144D
 }
-
+@media (max-width: 992px) {
+    .header-right .menu-btn {
+        font-size: 8px;
+    }
+}
 #dl-popup-search-box {
     background-color: rgba(0, 0, 0, .95);
     position: fixed;
@@ -1261,7 +1265,7 @@ ul.nav > li > a:hover, ul.nav > li > a:focus, ul.nav > li > a.active {
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    height: 100vh
+    height: 688px;
 }
 
 .hero-content span {
