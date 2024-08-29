@@ -1,3 +1,6 @@
+{#TODO isolar em env var#}
+{#{% set appUrl = "https://localhost" %}#}
+{% set appUrl = "https://app.pontonet.site" %}
 <!DOCTYPE html>
 <html class=" s flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
       lang="en">
@@ -81,7 +84,7 @@
                 </div>
                 <div class="header-right">
                     <a class="menu-btn default-btn btn-white"
-                       href="https://app.pontonet.site/register">Cadastre-se por 0,99 R$<span style="top: 49.5px; left: 14.8624px;"></span></a>
+                       href="#planos-e-precos">Cadastre-se<span style="top: 49.5px; left: 14.8624px;"></span></a>
                 </div>
             </div>
         </nav>
@@ -102,7 +105,7 @@
                     <span>Buscando o futuro da gestão de tempo!</span>
                     <h2>O ponto eletrônico mais ágil e moderno!</h2>
                     <p>Desenvolvido a partir da <b>portaria/MPT 671</b>, para garantir a validade de cada registro do sistema com infraestrutura solida e alta disponibilidade.</p>
-                    <a href="#planos-e-precos" class="menu-btn default-btn" data-scroll="">Cadastre-se por 0,99 R$<span style="top: 49.5px; left: 14.8624px;"></span></a>
+                    <a href="#planos-e-precos" class="menu-btn default-btn" data-scroll="">Cadastre-se<span style="top: 49.5px; left: 14.8624px;"></span></a>
 
                 </div>
             </div>
@@ -304,7 +307,7 @@
                                     <div class="pricing-footer">
                                         <a href="#contato"
                                            data-selected-plan="on_demand"
-                                           class="default-btn btn-blue">Contato<span
+                                           class="default-btn btn-blue">Entrar em contato<span
                                                 style="top: 49.5px; left: 14.8624px;"></span></a>
                                     </div>
                                 </li>
@@ -325,7 +328,7 @@
                                     <div class="pricing-footer">
                                         <a href="#contato"
                                            data-selected-plan="on_demand"
-                                           class="default-btn btn-blue">Contato<span
+                                           class="default-btn btn-blue">Entrar em contato<span
                                                 style="top: 49.5px; left: 14.8624px;"></span></a>
                                     </div>
 
@@ -361,7 +364,7 @@
 {#                                        <li>2FA</li>#}
                                     </ul>
                                     <div class="pricing-footer">
-                                        <a href="#contato"
+                                        <a href="{{ appUrl }}/cadastro/single-month/"
                                            data-selected-plan="1_user"
                                            class="default-btn btn-blue">Contratar<span></span></a>
                                     </div>
@@ -390,7 +393,7 @@
                                         {#                                        <li>2FA</li>#}
                                     </ul>
                                     <div class="pricing-footer">
-                                        <a href="#contato"
+                                        <a href="{{ appUrl }}/cadastro/single-year/"
                                            data-selected-plan="1_user"
                                            class="default-btn btn-blue">Contratar<span></span></a>
                                     </div>
@@ -423,7 +426,7 @@
                                         {#                                        <li>2FA</li>#}
                                     </ul>
                                     <div class="pricing-footer">
-                                        <a href="#contato"
+                                        <a href="{{ appUrl }}/cadastro/small-month/"
                                            data-selected-plan="5_users"
                                            class="default-btn btn-blue">Contratar<span></span></a>
                                     </div>
@@ -454,7 +457,7 @@
                                         {#                                        <li>2FA</li>#}
                                     </ul>
                                     <div class="pricing-footer">
-                                        <a href="#contato"
+                                        <a href="{{ appUrl }}/cadastro/small-year/"
                                            data-selected-plan="5_users"
                                            class="default-btn btn-blue">Contratar<span></span></a>
                                     </div>
@@ -487,7 +490,7 @@
                                         {#                                        <li>2FA</li>#}
                                     </ul>
                                     <div class="pricing-footer">
-                                        <a href="#contato"
+                                        <a href="{{ appUrl }}/cadastro/pro-month/"
                                            data-selected-plan="25_users"
                                            class="default-btn btn-blue">Contratar<span></span></a>
                                     </div>
@@ -518,7 +521,7 @@
                                         {#                                        <li>2FA</li>#}
                                     </ul>
                                     <div class="pricing-footer">
-                                        <a href="#contato"
+                                        <a href="{{ appUrl }}/cadastro/pro-year/"
                                            data-selected-plan="25_users"
                                            class="default-btn btn-blue">Contratar<span></span></a>
                                     </div>
@@ -625,62 +628,62 @@
 
     </div>
 </section>
-<section id="blog" class="blog-section padding bd-bottom">
-    <div class="container">
-        <div class="section-heading mb-40 text-center">
-            <span>Blog</span>
-            <h2>Conteúdo especializado</h2>
-            <p>Acompanhe nosso blog para conteúdos especializados em gestão do tempo, projetos e pessoas!</p>
-        </div>
-        <div class="row blog-wrap">
-            <div class="col-lg-4 col-sm-6 sm-padding">
-                <div class="blog-item">
-                    <div class="blog-thumb">
-                        <img src="./img/post-1.jpg" alt="post">
-                        <span class="category"><a
-                                href="#">Gestão do tempo</a></span>
-                    </div>
-                    <div class="blog-content">
-                        <h3><a href="#">Os 5 Maiores Desafios na Gestão de Horas para Freelancers</a></h3>
-                        <p>Como superar a alta demanda de tarefas no seu dia-a-dia com o Ponto Net e entregar seus projetos com mais qualidade de vida.</p>
-                        <a href="#"
-                           class="read-more">Leia mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 sm-padding">
-                <div class="blog-item">
-                    <div class="blog-thumb">
-                        <img src="./img/post-2.jpg" alt="post">
-                        <span class="category"><a
-                                href="#">Gestão de pessoas</a></span>
-                    </div>
-                    <div class="blog-content">
-                        <h3><a href="#">Transformando sua Abordagem à Gestão de Horas</a></h3>
-                        <p>Como o Ponto Net Pode Revolucionar seu Processo de Trabalho e do seu time em poucos passos.</p>
-                        <a href="#"
-                           class="read-more">Leia mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 sm-padding">
-                <div class="blog-item">
-                    <div class="blog-thumb">
-                        <img src="./img/post-3.jpg" alt="post">
-                        <span class="category"><a
-                                href="#">Gestão de projetos</a></span>
-                    </div>
-                    <div class="blog-content">
-                        <h3><a href="#">O Guia Definitivo para Estabelecer Metas Realistas de Produtividade na Gestão de Horas</a></h3>
-                        <p>Aprenda a alinhar expectativas com seus clientes ou líderes e garanta seu sucesso.</p>
-                        <a href="#"
-                           class="read-more">Leia mais</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{#<section id="blog" class="blog-section padding bd-bottom">#}
+{#    <div class="container">#}
+{#        <div class="section-heading mb-40 text-center">#}
+{#            <span>Blog</span>#}
+{#            <h2>Conteúdo especializado</h2>#}
+{#            <p>Acompanhe nosso blog para conteúdos especializados em gestão do tempo, projetos e pessoas!</p>#}
+{#        </div>#}
+{#        <div class="row blog-wrap">#}
+{#            <div class="col-lg-4 col-sm-6 sm-padding">#}
+{#                <div class="blog-item">#}
+{#                    <div class="blog-thumb">#}
+{#                        <img src="./img/post-1.jpg" alt="post">#}
+{#                        <span class="category"><a#}
+{#                                href="#">Gestão do tempo</a></span>#}
+{#                    </div>#}
+{#                    <div class="blog-content">#}
+{#                        <h3><a href="#">Os 5 Maiores Desafios na Gestão de Horas para Freelancers</a></h3>#}
+{#                        <p>Como superar a alta demanda de tarefas no seu dia-a-dia com o Ponto Net e entregar seus projetos com mais qualidade de vida.</p>#}
+{#                        <a href="#"#}
+{#                           class="read-more">Leia mais</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-lg-4 col-sm-6 sm-padding">#}
+{#                <div class="blog-item">#}
+{#                    <div class="blog-thumb">#}
+{#                        <img src="./img/post-2.jpg" alt="post">#}
+{#                        <span class="category"><a#}
+{#                                href="#">Gestão de pessoas</a></span>#}
+{#                    </div>#}
+{#                    <div class="blog-content">#}
+{#                        <h3><a href="#">Transformando sua Abordagem à Gestão de Horas</a></h3>#}
+{#                        <p>Como o Ponto Net Pode Revolucionar seu Processo de Trabalho e do seu time em poucos passos.</p>#}
+{#                        <a href="#"#}
+{#                           class="read-more">Leia mais</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-lg-4 col-sm-6 sm-padding">#}
+{#                <div class="blog-item">#}
+{#                    <div class="blog-thumb">#}
+{#                        <img src="./img/post-3.jpg" alt="post">#}
+{#                        <span class="category"><a#}
+{#                                href="#">Gestão de projetos</a></span>#}
+{#                    </div>#}
+{#                    <div class="blog-content">#}
+{#                        <h3><a href="#">O Guia Definitivo para Estabelecer Metas Realistas de Produtividade na Gestão de Horas</a></h3>#}
+{#                        <p>Aprenda a alinhar expectativas com seus clientes ou líderes e garanta seu sucesso.</p>#}
+{#                        <a href="#"#}
+{#                           class="read-more">Leia mais</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</section>#}
 <section id="contato" class="cta-section padding">
     <div class="overlay"></div>
     <div class="container">
