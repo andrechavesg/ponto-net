@@ -26,7 +26,7 @@ class LandingPageLead
     private ?string $selectedPlan = null;
 
     #[ORM\Column(nullable: true)]
-    private ?\DateTimeImmutable $createdAt = null;
+    private ?\DateTimeImmutable $createdAt;
 
     public function __construct()
     {
