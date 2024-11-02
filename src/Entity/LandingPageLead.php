@@ -25,6 +25,9 @@ class LandingPageLead
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $selectedPlan = null;
 
+    #[ORM\Column(nullable: true)]
+    private ?\DateTimeImmutable $createdAt = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -74,6 +77,18 @@ class LandingPageLead
     public function setSelectedPlan(?string $selectedPlan): static
     {
         $this->selectedPlan = $selectedPlan;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeImmutable
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(\DateTimeImmutable $createdAt): static
+    {
+        $this->createdAt = $createdAt;
 
         return $this;
     }
