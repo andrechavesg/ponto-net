@@ -1,6 +1,6 @@
 {#TODO isolar em env var#}
 {#{% set appUrl = "https://localhost" %}#}
-{% set appUrl = "https://app.pontonet.site" %}
+{% set appUrl = "https://pontonet.app" %}
 <!DOCTYPE html>
 <html class=" s flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
       lang="en">
@@ -123,8 +123,8 @@
             <div class="col-md-4 xs-padding">
                 <div class="promo-content">
                     <i class="ti-import color-red bg-red"></i>
-                    <h3>Relatórios completos</h3>
-                    <p>Acompanhe registros e horas extras dos trabalhadores, projetos, times e setores. Exporte e compartilhe seus relatórios em PDF, Excel, entre outros formatos!</p>
+                    <h3>Holerites completos</h3>
+                    <p>Acompanhe registros e horas extras dos trabalhadores, projetos, times e setores. Exporte e compartilhe seus holerites em PDF, Excel, entre outros formatos!</p>
                 </div>
             </div>
             <div class="col-md-4 xs-padding">
@@ -170,8 +170,8 @@
                             interface de calendario simples e direta.</p>
                     </li>
                     <li>
-                        <h3><span class="bg-blue color-blue">3</span> Compartilhe seus relatórios</h3>
-                        <p>Acompanhe registros, horas extras e compartilhe seus relatórios <br> com seus clientes ou times!</p>
+                        <h3><span class="bg-blue color-blue">3</span> Compartilhe seus holerites</h3>
+                        <p>Acompanhe registros, horas extras e compartilhe seus holerites <br> com seus clientes ou times!</p>
                     </li>
                 </ul>
             </div>
@@ -205,14 +205,14 @@
                     <img class="i" style="width:40px;height:40px;margin-bottom:20px;" src="./icons/whitelabel_icon.svg"
                          alt="Whitelabel icon">
                     <h3>Suas cores e marca</h3>
-                    <p>Utilize sua identidade, cores e marca em todas as telas do sistema e relatórios.</p>
+                    <p>Utilize sua identidade, cores e marca em todas as telas do sistema e holerites.</p>
                 </div>
             </div>
 
 
             <div class="col-lg-4 col-sm-6 padding-15">
                 <div class="feature-content bg-purple">
-                    <i class="ti-lock color-purple"></i>
+                    <i class="fa fa-tree color-purple"></i>
                     <h3>Feriados e férias</h3>
                     <p>Registre feriados e pontos facultativos para controle de registro e calculo de hora extra.</p>
                 </div>
@@ -221,7 +221,7 @@
             <div class="col-lg-4 col-sm-6 padding-15">
                 <div class="feature-content bg-blue">
                     <img class="i" style="width:40px;height:40px;margin-bottom:20px;" src="./icons/frequencia_icon.svg"
-                         alt="QR Code icon">
+                         alt="Frequencia de assinatura icon">
                     <h3>Frequencia de assinatura</h3>
                     <p>Assine os registros a cada ponto, por dia, semanalmente ou mensalmente para adicionar mais camadas de segurança.</p>
                 </div>
@@ -240,6 +240,28 @@
                     <i class="ti-face-smile color-green"></i>
                     <h3>Reconhecimento facial</h3>
                     <p>Garanta a integridade dos seus processos com reconhecimento facial, colheta de documentos, entre outras camadas, a cada registro.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 padding-15">
+                <div class="feature-content bg-purple">
+                    <i class="fa fa-qrcode color-purple"></i>
+                    <h3>Registro por QR Code</h3>
+                    <p>Permita que seus trabalhadores registrem ponto atraves da leitura automatica do QR Code em qualquer dispositivo ou totem.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 padding-15">
+                <div class="feature-content bg-ash">
+                    <i class="fa fa-calculator color-ash"></i>
+                    <h3>Calculo de adicionais</h3>
+                    <p>Habilite opcionalmente o calculo de adicional noturno para registros entre 22:00~05:00h conforme a Consolidação das Leis Trabalhistas.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 padding-15">
+                <div class="feature-content bg-red">
+                    <i class="fa fa-search-plus color-red"></i>
+                    <h3>Antecedentes</h3>
+                    <p>Verificação do histórico criminal e jurídico de uma pessoa com base no número de CPF e data de nascimento.</p>
                 </div>
             </div>
 
@@ -351,13 +373,13 @@
                                     <ul class="pricing-list text-left">
                                         <li><b>Uso individual</b></li>
                                         <li><b>Sem assinatura digital</b></li>
-                                        <li>Relatórios pessoais mensais</li>
+                                        <li>Holerites pessoais mensais</li>
                                         <li>Cadastro de horas</li>
                                         <li>Auditoria com data e IP</li>
                                         <li>Cadastro de projetos</li>
 {#                                        <li>Envio de relatórios</li>#}
 {#                                        <li>Valor hora por projeto</li>#}
-{#                                        <li>Cadastro por QR Code</li>#}
+                                        <li>Cadastro por QR Code</li>
 {#                                        <li>Comando de voz Alexa</li>#}
 {#                                        <li>Comando de voz Google</li>#}
 {#                                        <li>API</li>#}
@@ -380,13 +402,13 @@
                                     <ul class="pricing-list text-left">
                                         <li><b>Uso individual</b></li>
                                         <li><b>Sem assinatura digital</b></li>
-                                        <li>Relatórios pessoais mensais</li>
+                                        <li>Holerites pessoais mensais</li>
                                         <li>Cadastro de horas</li>
                                         <li>Auditoria com data e IP</li>
                                         <li>Cadastro de projetos</li>
+                                        <li>Cadastro por QR Code</li>
                                         {#                                        <li>Envio de relatórios</li>#}
                                         {#                                        <li>Valor hora por projeto</li>#}
-                                        {#                                        <li>Cadastro por QR Code</li>#}
                                         {#                                        <li>Comando de voz Alexa</li>#}
                                         {#                                        <li>Comando de voz Google</li>#}
                                         {#                                        <li>API</li>#}
@@ -412,14 +434,13 @@
                                         <b>Single+</b>
                                         <li><b>Até 5 colaboradores</b></li>
                                         <li><b>Assinatura semanal ou mensal</b></li>
-                                        <li><b>Relatórios pessoais trimestrais</b></li>
+                                        <li><b>Holerites trimestrais</b></li>
                                         <li><b>Cadastro de times</b></li>
-                                        <li><b>Relatórios por time</b></li>
+                                        <li><b>Holerites por time</b></li>
                                         <li><b>Controle de hora extra</b></li>
                                         <li><b>Controle de feriado</b></li>
                                         {#                                        <li>Envio de relatórios</li>#}
                                         {#                                        <li>Valor hora por projeto</li>#}
-                                        {#                                        <li>Cadastro por QR Code</li>#}
                                         {#                                        <li>Comando de voz Alexa</li>#}
                                         {#                                        <li>Comando de voz Google</li>#}
                                         {#                                        <li>API</li>#}
@@ -443,14 +464,13 @@
                                         <b>Single+</b>
                                         <li><b>Até 5 colaboradores</b></li>
                                         <li><b>Assinatura semanal ou mensal</b></li>
-                                        <li><b>Relatórios pessoais trimestrais</b></li>
+                                        <li><b>Holerites trimestrais</b></li>
                                         <li><b>Cadastro de times</b></li>
-                                        <li><b>Relatórios por time</b></li>
+                                        <li><b>Holerites por time</b></li>
                                         <li><b>Controle de hora extra</b></li>
                                         <li><b>Controle de feriado</b></li>
                                         {#                                        <li>Envio de relatórios</li>#}
                                         {#                                        <li>Valor hora por projeto</li>#}
-                                        {#                                        <li>Cadastro por QR Code</li>#}
                                         {#                                        <li>Comando de voz Alexa</li>#}
                                         {#                                        <li>Comando de voz Google</li>#}
                                         {#                                        <li>API</li>#}
@@ -476,14 +496,13 @@
                                         <b>Small+</b>
                                         <li><b>Até 10 colaboradores</b></li>
                                         <li><b>Assinatura por registro</b></li>
-                                        <li><b>Relatórios semestrais</b></li>
+                                        <li><b>Holerites semestrais</b></li>
                                         <li><b>Cadastro de projetos</b></li>
                                         <li><b>Cadastro de setores</b></li>
                                         <li><b>Controle de férias</b></li>
                                         <li><b>Suas cores e marca</b></li>
                                         {#                                        <li>Envio de relatórios</li>#}
                                         {#                                        <li>Valor hora por projeto</li>#}
-                                        {#                                        <li>Cadastro por QR Code</li>#}
                                         {#                                        <li>Comando de voz Alexa</li>#}
                                         {#                                        <li>Comando de voz Google</li>#}
                                         {#                                        <li>API</li>#}
@@ -507,14 +526,13 @@
                                         <b>Small+</b>
                                         <li><b>Até 10 colaboradores</b></li>
                                         <li><b>Assinatura por registro</b></li>
-                                        <li><b>Relatórios semestrais</b></li>
+                                        <li><b>Holerites semestrais</b></li>
                                         <li><b>Cadastro de projetos</b></li>
                                         <li><b>Cadastro de setores</b></li>
                                         <li><b>Controle de férias</b></li>
                                         <li><b>Suas cores e marca</b></li>
                                         {#                                        <li>Envio de relatórios</li>#}
                                         {#                                        <li>Valor hora por projeto</li>#}
-                                        {#                                        <li>Cadastro por QR Code</li>#}
                                         {#                                        <li>Comando de voz Alexa</li>#}
                                         {#                                        <li>Comando de voz Google</li>#}
                                         {#                                        <li>API</li>#}
@@ -594,7 +612,7 @@
             <div class="testi-item d-flex align-items-center">
                 <img src="./img/enzo.jpeg" alt="Foto do Enzo">
                 <div class="testi-content">
-                    <p>"O Ponto Net é uma ferramenta excepcional! Sua simplicidade de uso e relatórios detalhados transformaram minha gestão de tempo."</p>
+                    <p>"O Ponto Net é uma ferramenta excepcional! Sua simplicidade de uso e holerites detalhados transformaram minha gestão de tempo."</p>
                     <h3>Enzo Seehagen</h3>
                     <ul class="rattings">
                         <li><i class="fa fa-star"></i></li>
