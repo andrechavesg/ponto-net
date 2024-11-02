@@ -19,7 +19,7 @@
             <tr>
                 <td>{{ landing_page_feedback.id }}</td>
                 <td>{{ landing_page_feedback.content }}</td>
-                <td>{{ landing_page_feedback.createdAt ? landing_page_feedback.createdAt|date("d/m/Y H:i") :null }}</td>
+                <td>{{ landing_page_feedback.createdAt ? landing_page_feedback.createdAt|date("d/m/Y H:i") : null }}</td>
                 <td>
                     <a href="{{ path('app_landing_page_feedback_show', {'id': landing_page_feedback.id}) }}">show</a>
                     <a href="{{ path('app_landing_page_feedback_edit', {'id': landing_page_feedback.id}) }}">edit</a>
