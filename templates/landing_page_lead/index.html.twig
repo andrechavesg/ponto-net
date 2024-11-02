@@ -12,6 +12,7 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Created at</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -22,6 +23,7 @@
                 <td>{{ landing_page_lead.name }}</td>
                 <td>{{ landing_page_lead.email }}</td>
                 <td>{{ landing_page_lead.phone }}</td>
+                <td>{{ landing_page_lead.createdAt ? landing_page_lead.createdAt|date("d/m/Y H:i") :null }}</td>
                 <td>
                     <a href="{{ path('app_landing_page_lead_show', {'id': landing_page_lead.id}) }}">show</a>
                     <a href="{{ path('app_landing_page_lead_edit', {'id': landing_page_lead.id}) }}">edit</a>
